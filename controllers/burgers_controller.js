@@ -24,6 +24,7 @@ router.get("/api/burgers", function(req,res){
         res.json(burgObject);
     })
     });
+
 // Add new burger to the db.
 router.post("/api/burgers", function(req, res) {
   burger.insertOne(
