@@ -3,7 +3,8 @@
 <div class="container">
 
     <div class="jumbotron">
-        <h1 id="color-override">Eat Da Burger</h1>
+        <h1 id="color-override">Eat Da Burger  <img src = "../assets/images/burger.png"></h1>
+       
         <p id="color-override">First, you make it. Then, you eat it.</p>
         <br>
         <h2 id="color-override">Make a Burger</h2>
@@ -13,10 +14,11 @@
                     <label for="newburger" id="color-override">New Burger:</label>
                     <input type="text" id="newburger" name="burger" placeholder="Enter new burger">
                     {{!-- Create a button in index.handlebars that will submit the user input into the database. --}}
-                    <button type="submit" class="btn btn-success" id="addburger"><span class="fa fa-thumbs-up"></span></button>
+                    <button type="submit" class="btn btn-success" id="addburger"><i class="fas fa-hamburger"></i></button>
                 </div>
             </form>
         </panel>
+       
     </div><!-- /jumbotron -->
 
     <div class="row">
@@ -29,7 +31,7 @@
                         {{#each burgers}}
                             {{#unless devoured}}
                                 <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
-                                <button type="button" class="eatburger btn btn-warning" id ="eatbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-cutlery"></span></button>
+                                <button type="button" class="eatburger btn btn-warning" id ="eatbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><i class="fas fa-utensils"></i></button>
                                 <hr>
                             {{/unless}}
                         {{/each}}
@@ -46,7 +48,7 @@
                         {{#each burgers}}
                             {{#if devoured}}
                                 <span><strong> {{this.id}} - {{this.burger_name}} </strong></span>
-                                <button type="button" class="trashburger btn btn-danger" id ="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><span class="fa fa-trash"></span></button>
+                                <button type="button" class="trashburger btn btn-danger" id ="trashbutton" data-id="{{this.id}}" data-newDevoured="{{devour}}"><i class="far fa-trash-alt"></i></button>
                                 <hr>
                             {{/if}}
                         {{/each}}
