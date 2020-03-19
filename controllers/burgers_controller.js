@@ -1,11 +1,8 @@
-// Dependencies
-const express = require("express");
-// Import the model to use its db functions for burger.js
-const burger = require("../models/burger.js");
 
-// Create the router for the app, and export the router at the end of your file.
+const express = require("express");
+const burger = require("../models/burger.js");
 let router = express.Router();
-// Create routes and set up logic where required.
+
 router.get("/", function(req, res) {
   burger.selectAll(function(data) {
     let burgObject = {
