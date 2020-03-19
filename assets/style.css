@@ -25,9 +25,12 @@
 }
 
 #righthead {
-    background-color: #f0ad4e;
+    background-color: #f04e5b;
     color: white;
     text-align: center;
     font-size: 1.2em;
 }
 
+main{
+    background-color:#f0ad4e;
+}
