@@ -3,6 +3,15 @@
     
 }
 
+img{
+    float:right;
+    height:250px;
+    width:350px;
+    margin-right:50px;
+    padding-bottom:20px;
+   
+}
+
 .jumbotron > h1 {
     font-family: 'Liu Jian Mao Cao', cursive;
      color: black;
