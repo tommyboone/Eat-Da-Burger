@@ -1,5 +1,8 @@
 # Eat-Da-Burger
 
+# Stack
+This app was made using Node.js, Express, and the Handlebars template engine along with some Bootstrap styling, FontAwesome icons, and Google Fonts. 
+
 # Link
 https://eat-a-burger-tb.herokuapp.com/
 
